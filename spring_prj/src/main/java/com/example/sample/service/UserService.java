@@ -1,7 +1,7 @@
 package com.example.sample.service;
 
-import com.example.sample.entity.AccountEntity;
-import com.example.sample.repository.AccountRepository;
+import com.example.sample.entity.UserEntity;
+import com.example.sample.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,11 +11,11 @@ import java.util.List;
 
 @Service
 @Transactional
-public class AccountService {
+public class UserService {
     @Autowired
-    AccountRepository accountRepository;
+    UserRepository userRepository;
 
-    public List<AccountEntity> getAccount() {
-        return accountRepository.findAll();
+    public List<UserEntity> getAccount() {
+        return userRepository.findAll();
     }
 }
