@@ -1,7 +1,7 @@
 package com.example.sample.controller;
 
-import com.example.sample.entity.AccountEntity;
-import com.example.sample.service.AccountService;
+import com.example.sample.entity.UserEntity;
+import com.example.sample.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,12 +10,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("user/getUser")
-public class AccountController {
+public class UserController {
     @Autowired
-    AccountService accountService;
+    UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
-    List<AccountEntity> getTweet() {
-        return accountService.getAccount();
+    List<UserEntity> getTweet() {
+        return userService.getAccount();
     }
 }
