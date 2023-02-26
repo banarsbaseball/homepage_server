@@ -1,0 +1,4 @@
+# mysqlイメージのビルドで生成されるfile
+**/mysql/data
+**/mysql/log
+

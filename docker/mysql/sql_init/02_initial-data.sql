@@ -1,0 +1,1 @@
+INSERT INTO banars_homepage.user(`id`, `team_id`, `login_id`, `login_password`, `user_name`, `user_type`) VALUES ('001','banars','sugawara0111','banarsbaseball','KeiSugawara','ADMINISTRATOR'), ('002','banars','honma0226','banarsbaseball','KinaruHonma','ADMINISTRATOR');
