@@ -10,6 +10,7 @@
       "vscjava.vscode-java-pack",
       "pivotal.vscode-boot-dev-pack",
       "gabrielbb.vscode-lombok"
-    ]
+    ],
+    "postCreateCommand": "apt update && apt install -y git && git clone -b master https://github.com/banarsbaseball/homepage_server.git",
   }
   
