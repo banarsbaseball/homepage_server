@@ -30,14 +30,12 @@ services:
       - mysql # 「mysql」の後で起動
 
   java:
-    image: openjdk:15
+    image: openjdk:15.0-jdk-slim
     container_name: java
     env_file:
       - ./mysql/db.env # DB接続用
     tty: true
     working_dir: /app
-    volumes:
-      - ../spring_prj:/app # Spring Bootのプロジェクト
     ports: 
       - 8080:8080 # 通常実行
       - 5050:5050 # デバッグ用
