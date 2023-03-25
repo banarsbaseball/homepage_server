@@ -11,5 +11,5 @@
     "pivotal.vscode-boot-dev-pack",
     "gabrielbb.vscode-lombok"
   ],
-  "postCreateCommand": "apt update && apt install -y git && git config --global --add safe.directory /app && git config --local user.name banarsbaseball && git config --local user.email banarsbaseball89@gmail.com",
+  "postCreateCommand": "apt update && apt install -y git && git config --global --add safe.directory /app",
 }
