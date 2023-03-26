@@ -11,5 +11,5 @@
     "pivotal.vscode-boot-dev-pack",
     "gabrielbb.vscode-lombok"
   ],
-  "postCreateCommand": "apt update && apt install -y git && apt install -y vim && git config --global --add safe.directory /app",
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 }
