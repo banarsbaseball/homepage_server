@@ -5,17 +5,19 @@ import com.example.sample.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import io.swagger.v3.oas.annotations.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("user/getUser")
+@RequestMapping("user")
 public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(method = RequestMethod.GET)
-    List<UserEntity> getTweet() {
+    @GetMapping("/getUser")
+    @Operation(summary = "ユーザ情報一覧取得")
+    List<UserEntity> getUser() {
         return userService.getAccount();
     }
 }
