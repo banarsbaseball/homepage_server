@@ -32,6 +32,8 @@ services:
   java:
     image: openjdk:15.0-jdk-slim
     container_name: java
+    volumes:
+      - ..:/app
     env_file:
       - ./mysql/db.env # DB接続用
     tty: true
