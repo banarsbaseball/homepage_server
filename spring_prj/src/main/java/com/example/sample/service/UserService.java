@@ -1,5 +1,6 @@
 package com.example.sample.service;
 
+import com.example.sample.dto.UserUpdateRequest;
 import com.example.sample.entity.UserEntity;
 import com.example.sample.repository.UserRepository;
 
@@ -15,7 +16,14 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
+    @Autowired
+    UserUpdateRequest userUpdateRequest;
+
     public List<UserEntity> getAccount() {
         return userRepository.findAll();
+    }
+
+    public void userUpdate(UserUpdateRequest userUpdateRequest){
+
     }
 }
