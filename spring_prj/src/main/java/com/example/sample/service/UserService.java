@@ -7,6 +7,7 @@ import com.example.sample.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class UserService {
     }
 
     public void userUpdate(UserUpdateRequest userUpdateRequest){
-
+        userRepository.save(userUpdateRequest);
     }
+        
 }
