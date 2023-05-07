@@ -1,3 +1,5 @@
 # mysqlイメージのビルドで生成されるfile
 **/mysql/data
 **/mysql/log
+# gitの設定file（コンテナビルド時にコマンド補完用fileが生成される）
+*.git*
